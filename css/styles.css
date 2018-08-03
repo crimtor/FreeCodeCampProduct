@@ -1,0 +1,45 @@
+html {
+font-family: Helvetica, sans-serif;
+text-align:center;
+color:#000;
+}
+@media (max-width: 650px;) {
+html {
+  background-color: hsl(0, 50%, 40%);
+}
+}
+main{
+margin:15px auto;
+padding:15px;
+background:hsl(180, 20%, 50%);
+
+}
+header {
+  position: fixed;
+  top: 0px;
+}
+ul
+{
+text-align:center;
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-gap: 15px;
+justify-items: end;
+}
+
+ul li
+{
+list-style-type: none;
+line-height: 1.5em;
+}
+
+.questionColumn {
+  display: flex;
+  flex-direction: column;
+}
+.labels{
+flex-grow: 1;
+}
+.inputColumn{
+  flex-shrink: 1;
+}
